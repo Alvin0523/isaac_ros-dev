@@ -1,0 +1,29 @@
+FROM isaac_ros_dev-aarch64:latest
+
+
+# Set defaults
+ENV ROS_DOMAIN_ID=30
+ENV QT_X11_NO_MITSHM=1
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=all
+
+# Install system/ROS packages
+RUN apt-get update && apt-get install -y \
+    ros-humble-isaac-ros-nvblox \
+    ros-humble-isaac-ros-visual-slam \
+    ros-humble-isaac-ros-examples \
+    ros-humble-isaac-ros-realsense \
+    ros-humble-foxglove-bridge \
+    tmux \
+    git \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set workspace path
+ENV ISAAC_ROS_WS=/workspaces/isaac_ros-dev
+
+# RUN ["chmod", "+x", "/workspaces/isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh"]
+RUN chmod +x /isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh
+
+ENTRYPOINT ["/workspaces/isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh"]
+
+CMD ["/bin/bash"]

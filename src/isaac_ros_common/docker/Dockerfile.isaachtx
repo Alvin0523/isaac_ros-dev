@@ -21,9 +21,6 @@ RUN apt-get update && apt-get install -y \
 # Set workspace path
 ENV ISAAC_ROS_WS=/workspaces/isaac_ros-dev
 
-# RUN ["chmod", "+x", "/workspaces/isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh"]
-RUN chmod +x /isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh
-
 ENTRYPOINT ["/workspaces/isaac_ros-dev/src/isaac_ros_common/scripts/deploy/_deploy-entrypoint.sh"]
 
 CMD ["/bin/bash"]

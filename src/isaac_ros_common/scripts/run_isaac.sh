@@ -295,10 +295,11 @@ docker run -it --rm \
     -e DISPLAY=$DISPLAY \
     -e USER=$USER \
     -e ISAAC_ROS_WS=/workspaces/isaac_ros-dev \
+    -e XAUTHORITY=/home/$USER/.Xauthority \
+    -v $HOME/.Xauthority:/home/$USER/.Xauthority:rw \
     -e HOST_USER_UID=$(id -u) \
     -e HOST_USER_GID=$(id -g) \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v $HOME/.Xauthority:/root/.Xauthority:rw \
     -v /dev:/dev \
     -v $ISAAC_ROS_DEV_DIR:/workspaces/isaac_ros-dev \
     -v /etc/localtime:/etc/localtime:ro \

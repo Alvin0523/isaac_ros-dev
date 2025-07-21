@@ -1,7 +1,13 @@
 digraph G {
 "base_link" -> "camera0_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 30.15\nBuffer length: 4.942\nMost recent transform: 1751959729.352148\nOldest transform: 1751959724.410163\n"];
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1751978757.522677\nOldest transform: 1751978752.522561\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 30.324\nBuffer length: 2.638\nMost recent transform: 1751978757.494269\nOldest transform: 1751978754.856127\n"];
+"base_link" -> "wheel_left_link"[label=" Broadcaster: default_authority\nAverage rate: 12.929\nBuffer length: 4.95\nMost recent transform: 1751978757.472753\nOldest transform: 1751978752.522561\n"];
+"base_link" -> "wheel_right_link"[label=" Broadcaster: default_authority\nAverage rate: 12.929\nBuffer length: 4.95\nMost recent transform: 1751978757.472753\nOldest transform: 1751978752.522561\n"];
+"base_link" -> "caster_back_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "base_scan"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera0_link" -> "camera0_infra1_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera0_aligned_depth_to_infra1_frame" -> "camera0_infra1_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera0_link" -> "camera0_aligned_depth_to_infra1_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
@@ -15,14 +21,8 @@ digraph G {
 "camera0_accel_frame" -> "camera0_accel_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera0_link" -> "camera0_gyro_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera0_gyro_frame" -> "camera0_gyro_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 20.238\nBuffer length: 4.2\nMost recent transform: 1751959729.365523\nOldest transform: 1751959725.16543\n"];
-"base_link" -> "caster_back_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"base_link" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"base_link" -> "base_scan"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"base_link" -> "wheel_left_link"[label=" Broadcaster: default_authority\nAverage rate: 13.012\nBuffer length: 4.15\nMost recent transform: 1751959729.315544\nOldest transform: 1751959725.16543\n"];
-"base_link" -> "wheel_right_link"[label=" Broadcaster: default_authority\nAverage rate: 13.012\nBuffer length: 4.15\nMost recent transform: 1751959729.315544\nOldest transform: 1751959725.16543\n"];
 edge [style=invis];
  subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1751959729.4368017"[ shape=plaintext ] ;
+"Recorded at time: 1751978757.5797243"[ shape=plaintext ] ;
 }->"map";
 }

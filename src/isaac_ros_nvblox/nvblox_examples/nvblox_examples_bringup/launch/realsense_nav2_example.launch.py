@@ -39,7 +39,7 @@ def generate_launch_description() -> LaunchDescription:
         package='tf2_ros',
         executable='static_transform_publisher',
         name='camera_mount_tf',
-        arguments=['0.015', '0', '0.122', '0', '0', '0', '1', 'base_link', 'camera0_link'],
+        arguments=['0.015', '0', '0.182', '0', '0', '0', '1', 'base_link', 'camera0_link'],
         )
         
     )

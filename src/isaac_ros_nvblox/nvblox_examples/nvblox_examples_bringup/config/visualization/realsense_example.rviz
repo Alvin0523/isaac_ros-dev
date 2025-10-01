@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /TF1/Frames1
         - /TF1/Tree1
-        - /Nvblox1/Esdf Slice1
+        - /Nvblox1
         - /Sensors1/Depth Image1
         - /Sensors1/Color Image1
         - /Odometry1/Shape1
@@ -258,9 +258,9 @@ Visualization Manager:
       Name: Sensors
     - Class: rviz_default_plugins/Axes
       Enabled: true
-      Length: 0.10000000149011612
+      Length: 0.05000000074505806
       Name: Camera Link
-      Radius: 0.029999999329447746
+      Radius: 0.019999999552965164
       Reference Frame: camera0_link
       Value: true
     - Alpha: 0.699999988079071
@@ -378,7 +378,7 @@ Visualization Manager:
       Offset:
         X: 0
         Y: 0
-        Z: 0
+        Z: 0.029999999329447746
       Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.029999999329447746
@@ -406,7 +406,7 @@ Visualization Manager:
       Offset:
         X: 0
         Y: 0
-        Z: 0
+        Z: 0.029999999329447746
       Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.029999999329447746
@@ -471,10 +471,10 @@ Visualization Manager:
         Axes Length: 1
         Axes Radius: 0.10000000149011612
         Color: 255; 25; 0
-        Head Length: 0.30000001192092896
-        Head Radius: 0.10000000149011612
-        Shaft Length: 0.20000000298023224
-        Shaft Radius: 0.05000000074505806
+        Head Length: 0.10000000149011612
+        Head Radius: 0.05000000074505806
+        Shaft Length: 0.10000000149011612
+        Shaft Radius: 0.019999999552965164
         Value: Arrow
       Topic:
         Depth: 5
@@ -483,6 +483,26 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /odom
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz_default_plugins/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.10000000149011612
+      Head Radius: 0.05999999865889549
+      Name: Goal Pose
+      Shaft Length: 0.10000000149011612
+      Shaft Radius: 0.04500000178813934
+      Shape: Arrow
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
       Value: true
     - Class: rviz_default_plugins/MarkerArray
       Enabled: true
@@ -543,7 +563,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.5359890460968018
+      Distance: 1.6577868461608887
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -558,10 +578,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0902019739151
+      Pitch: 0.36020132899284363
       Target Frame: camera0_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 3.105398178100586
+      Yaw: 3.0303797721862793
     Saved: ~
 Window Geometry:
   Color Image:

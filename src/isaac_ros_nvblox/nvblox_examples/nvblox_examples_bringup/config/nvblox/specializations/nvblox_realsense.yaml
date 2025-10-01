@@ -11,7 +11,7 @@
 
     static_mapper:
       # Expected to be tuned by users. Slice height depends on realsense mounting.
-      esdf_slice_min_height: 0.1  # 2 cm above the ground
+      esdf_slice_min_height: 0.04  # 2 cm above the ground
       esdf_slice_max_height: 0.3     # covers obstacles up to 25 cm high
       esdf_slice_height: 0.1         # slice visualization plane (10 cm)
       # do_depth_preprocessing: True

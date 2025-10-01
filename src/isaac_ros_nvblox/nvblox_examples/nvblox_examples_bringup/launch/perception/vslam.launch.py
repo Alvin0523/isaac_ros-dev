@@ -70,7 +70,8 @@ def add_vslam(args: lu.ArgumentContainer) -> List[Action]:
         'map_frame': 'map',
         'odom_frame': 'odom',
         'base_frame': base_frame,
-        'publish_odom_to_base_tf': False,        
+        'publish_odom_to_base_tf': False,
+        'image_jitter_threshold_ms': 70.0,        
     }
     realsense_parameters = {
         'enable_rectified_pose': True,

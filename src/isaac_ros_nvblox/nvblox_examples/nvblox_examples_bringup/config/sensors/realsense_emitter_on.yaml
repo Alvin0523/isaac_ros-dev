@@ -47,7 +47,7 @@ pointcloud:
 pointcloud_texture_index: 0
 pointcloud_texture_stream: RS2_STREAM_ANY
 
-enable_sync: false
+enable_sync: true
 align_depth: false
 
 gyro_fps: 200
